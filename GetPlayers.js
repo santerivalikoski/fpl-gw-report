@@ -57,6 +57,6 @@ const GetPlayers = (url) => {
 })
 }
 
-var tetete = await GetPlayers('https://fantasy.premierleague.com/entry/2302161/event/10')
+var tetete = GetPlayers('https://fantasy.premierleague.com/entry/2302161/event/10')
 console.dir(tetete)
 
