@@ -52,8 +52,8 @@ function processFile() {
     for (var i = 0; i < nimilista.length; i++) {
         nimilista[i] = new Array()
     }
-    console.log(`TOP ${captains.length} MANAGERIT:`)
-    console.log('-------------------------------')
+    console.log(`MANAGERIT ${captains.length}kpl :`)
+    console.log('----------------------------------------------')
     console.log('KAPTEENIT:')
     for (var i = 0; i < lopullisetkaput.length; i++) {
         for (var j = 0; j < captains.length; j++) {
@@ -90,22 +90,61 @@ function processFile() {
             lopullisetpelaajat.push(players[i].player)
         }
     }
+
     var managerilista = new Array(lopullisetpelaajat.length)
     for (var i = 0; i < managerilista.length; i++) {
         managerilista[i] = new Array()
     }
-    console.log('-------------------------------')
+    console.log('----------------------------------------------')
     console.log('DIFFERENTIAALIT:')
+    console.log('YHDELLÄ:')
+
     for (var i = 0; i < lopullisetpelaajat.length; i++) {
         for (var j = 0; j < players.length; j++) {
             if (lopullisetpelaajat[i] === players[j].player) {
                 managerilista[i].push(players[j].manager)
             }
         }
-        if (managerilista[i].length < 3) {
+        if (managerilista[i].length === 1) {
             console.log(lopullisetpelaajat[i], ": ", managerilista[i].join(", "))
         }
         // console.log('pituus ', managerilista[i].length)
+    }
+
+    var manageriTupla = new Array(lopullisetpelaajat.length)
+    for (var i = 0; i < manageriTupla.length; i++) {
+        manageriTupla[i] = new Array()
+    }
+    console.log('----------------------------------------------')
+    console.log('KAHDELLA:')
+    for (var i = 0; i < lopullisetpelaajat.length; i++) {
+        for (var j = 0; j < players.length; j++) {
+            if (lopullisetpelaajat[i] === players[j].player) {
+                manageriTupla[i].push(players[j].manager)
+            }
+        }
+        if (manageriTupla[i].length === 2) {
+            console.log(lopullisetpelaajat[i], ": ", manageriTupla[i].join(", "))
+        }
+        // console.log('pituus ', manageriTupla[i].length)
+    }
+
+    var manageriTripla = new Array(lopullisetpelaajat.length)
+    for (var i = 0; i < manageriTripla.length; i++) {
+        manageriTripla[i] = new Array()
+    }
+    console.log('----------------------------------------------')
+    console.log('KOLMELLA:')
+    for (var i = 0; i < lopullisetpelaajat.length; i++) {
+        for (var j = 0; j < players.length; j++) {
+            if (lopullisetpelaajat[i] === players[j].player) {
+                manageriTripla[i].push(players[j].manager)
+            }
+        }
+        if (manageriTripla[i].length === 3) {
+            console.log(lopullisetpelaajat[i], ": ", manageriTripla[i].join(", "))
+        }
+        // console.log('pituus ', manageriTripla[i].length)
     }
     // console.dir(players)
     }

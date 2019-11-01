@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const gw = 10
-let bookingUrlList = [
+let teamUrlsList = [
     `https://fantasy.premierleague.com/entry/403555/event/${gw}`,
     `https://fantasy.premierleague.com/entry/2491640/event/${gw}`,
     `https://fantasy.premierleague.com/entry/937861/event/${gw}`,
@@ -23,18 +23,18 @@ let bookingUrlList = [
     `https://fantasy.premierleague.com/entry/2302161/event/${gw}`
 ];
 let managers = [{}]
-var pituus = bookingUrlList.length
+var pituus = teamUrlsList.length
 function tauko() {
     console.log('tauko')
 }
 for (var i = 0; i < 11; i++) {
-    let bookingUrl = bookingUrlList[i];
+    let teamUrl = teamUrlsList[i];
     (async () => {
-        process.setMaxListeners(20)
+        process.setMaxListeners(12)
         const browser = await puppeteer.launch({ headless: true });
         const page = await browser.newPage();
         // await page.setViewport({ width: 1920, height: 926 });
-        await page.goto(bookingUrl, { waitUntil: 'networkidle2' });
+        await page.goto(teamUrl, { waitUntil: 'networkidle2' });
         // get player details
         let teamData = await page.evaluate(() => {
             let players = [];
@@ -61,6 +61,7 @@ for (var i = 0; i < 11; i++) {
                 }
                 players.push(playerJson);
             });
+            // KELTASELLA JA PUNASELLA OLEVAT PITÄÄ OTTAA ERIKSEEN, PUNASIA EI TÄLLÄ HETKELLÄ HAETA OLLENKAAN
             playersElms.forEach((playerElement) => {
                 let yellowPlayer = {};
                 try {
@@ -92,13 +93,12 @@ for (var i = 0; i < 11; i++) {
 }
 setTimeout(() => {
     for (var i = 11; i < 19; i++) {
-        let bookingUrl = bookingUrlList[i];
+        let teamUrl = teamUrlsList[i];
         (async () => {
-            process.setMaxListeners(20)
             const browser = await puppeteer.launch({ headless: true });
             const page = await browser.newPage();
             // await page.setViewport({ width: 1920, height: 926 });
-            await page.goto(bookingUrl, { waitUntil: 'networkidle2' });
+            await page.goto(teamUrl, { waitUntil: 'networkidle2' });
             // get player details
             let teamData = await page.evaluate(() => {
                 let players = [];
@@ -154,7 +154,7 @@ setTimeout(() => {
             await browser.close()
         })();
     }
-}, 75000);
+}, 45000);
 
 setTimeout(() => {
     fs.writeFile("./db.json", JSON.stringify(managers), function(err) {
@@ -163,6 +163,6 @@ setTimeout(() => {
         }
         console.log("The file was saved!");
     })
-}, 150000);
+}, 85000);
 console.log('----LOPPU-----')
 console.dir(managers)
