@@ -16,16 +16,16 @@ let bookingUrl = 'https://fantasy.premierleague.com/entry/2491640/event/10';
         hotelsElms.forEach((hotelelement) => {
             let hotelJson = {};
             try {
-                
+
                 hotelJson.name = hotelelement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 hZsmkV"]').innerText
                 hotelJson.captain = false
-                if(hotelelement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]'))   { 
+                if (hotelelement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
                     hotelJson.captain = true
                 }
-                
+
                 // console.log(hotelJson.captain)
             }
-            catch (exception){
+            catch (exception) {
 
             }
             hotels.push(hotelJson);
@@ -35,7 +35,7 @@ let bookingUrl = 'https://fantasy.premierleague.com/entry/2491640/event/10';
 
     console.dir(hotelData);
     await browser.close()
-})();  
+})();
 
 
 //         let hotels = [];
@@ -46,7 +46,7 @@ let bookingUrl = 'https://fantasy.premierleague.com/entry/2491640/event/10';
 //             let hotelJson = {};
 //             try {
 //                 hotelJson.name = hotelelement.querySelector('div.PitchElementData__ElementName-sc-1u4y6pr-0 hZsmkV').innerText;
-                
+
 //             }
 //             catch (exception){
 //                 console.log('catchi', exception)
@@ -78,3 +78,93 @@ let bookingUrl = 'https://fantasy.premierleague.com/entry/2491640/event/10';
 //   console.log('Dimensions:', dimensions);
 
 //   await browser.close();
+
+
+
+for (var i = 0; i < urlList.length; i++) {
+    let url = urlList[i];
+    (async () => {
+        const browser = await puppeteer.launch({ headless: true });
+        const page = await browser.newPage();
+        await page.goto(url, { waitUntil: 'networkidle2' });
+        let Data = await page.evaluate(() => {
+            let manager = document.querySelector('div[class="sc-bdVaJa jWQvkU"] > h2[class="Entry__EntryName-sc-1kf863-0 frXpNV"]').innerText
+            let playersElms = document.querySelectorAll('div[class="Pitch__PitchUnit-sc-1mctasb-3 gYXrCB"]')
+
+            // get the player data
+            playersElms.forEach((playerElement) => {
+                let playerJson = {};
+                try {
+                    playerJson.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 hZsmkV"]').innerText
+                    playerJson.captain = false
+                    playerJson.manager = manager
+                    if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
+                        playerJson.captain = true
+                    }
+
+
+                }
+                catch (exception) {
+
+                }
+                players.push(playerJson);
+            });
+            // KELTASELLA JA PUNASELLA OLEVAT PITÄÄ OTTAA ERIKSEEN, PUNASIA EI TÄLLÄ HETKELLÄ HAETA OLLENKAAN
+            playersElms.forEach((playerElement) => {
+                let yellowPlayer = {};
+                try {
+                    yellowPlayer.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 fXSnzv"]').innerText
+                    yellowPlayer.captain = false
+                    yellowPlayer.manager = manager
+                    if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
+                        yellowPlayer.captain = true
+                    }
+
+                }
+                catch (exception) {
+
+                }
+                players.push(yellowPlayer);
+            });
+            return players;
+        });
+        managers.push(teamData)
+        // console.dir(teamData);
+        // fs.writeFile("./db.json", JSON.stringify(teamData), function(err) {
+        //     if (err) {
+        //         return console.log(err)
+        //     }
+        //     console.log("The file was saved!");
+        // })
+        await browser.close()
+    })();
+}
+
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+
+let urlList = [
+    'www.esimerkki.fi/1',
+    'www.esimerkki.fi/2',
+    'www.esimerkki.fi/3',
+    'www.esimerkki.fi/4',
+    'www.esimerkki.fi/5',
+    ...
+    'www.esimerkki.fi/50',
+]
+let tulos = [{}]
+
+for (var i = 0; i < urlList.length; i++) {
+    let url = urlList[i];
+    // puppeteer koodi:
+    (async () => {
+        const browser = await puppeteer.launch({ headless: true });
+        const page = await browser.newPage();
+        await page.goto(url, { waitUntil: 'networkidle2' });
+        let Data = await page.evaluate(() => {
+            // ..................
+        })
+        tulos.push(Data)
+        await browser.close()
+    })()
+}
