@@ -41,7 +41,8 @@ let managers = [{}]
 const pituus = teamUrlsList.length
 let laskuri = 0
 console.log(`Starting gameweek ${gw} report`)
-let tulos = (async () => {
+let promise = new Promise(function(resolve, reject) {
+    (async () => {
     for (const teamUrl of teamUrlsList) {
         laskuri++
         const browser = await puppeteer.launch({ headless: true });
@@ -101,7 +102,12 @@ let tulos = (async () => {
                     return console.log(err)
                 }
                 console.log("The file was saved!");
+                resolve('wuhuu')
             })
         }
     }
 })();
+})
+promise.then(function(val) {
+    console.log('vikana')
+})
