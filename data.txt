@@ -1,54 +1,51 @@
-MANAGERIT 20KPL
+MANAGERIT 19KPL
 ----------------------------------------------
 KAPTEENIT:
-De Bruyne: Antti Silvennoinen, Roope Juvonen, Aleksi Halme, Jyrki Kalaja, Paavo Nylund
-Sterling: juuso kukkonen, Heikki Oksanen, Henrik Sylvan, Risto Soininen, Teemu Kallio, Aleksi Korkeamäki, Jere Lehtosaari
-Salah: Jaakko Urho
-Agüero: Samu Lax, Riku Järvelä, Ilari Piipponen, Toni Vuorinen, Santeri Lindfors
-Mané: Timo Nick
-undefined: Jussi Inkiläinen
+Vardy: marko kettunen
+De Bruyne: Martti Siiteri, Timo Tikkala
+Agüero: Samu Lax, Riku Muurinen, Jonne Sandström
+Sterling: ilkka soini, tatu pekkala, Kim Hipari, Teemu Honkanen, Petri Jokisalo, Mikael Kourilehto, miikka lindfors, Mikael Karlsson, Markus Sairanen, Santeri Välikoski, Jaakko Ahtila, Ville Vääränen, Aleksi Leppanen
 ----------------------------------------------
 DIFFERENTIAALIT
 YHDELLÄ:
-Aké : Jussi Inkiläinen
-Azpilicueta : Ilari Piipponen
-Barnes : Teemu Kallio
-Cantwell : Timo Nick
-Connolly : juuso kukkonen
+Cantwell : Petri Jokisalo
 Cresswell : Samu Lax
-de Gea : Ilari Piipponen
-Digne : Samu Lax
-Dubravka : Roope Juvonen
-Evans : Antti Silvennoinen
-Gazzaniga : Risto Soininen
-James : Jyrki Kalaja
-Leno : Teemu Kallio
-McTominay : Aleksi Halme
-Moutinho : Toni Vuorinen
-Ndombele : Jussi Inkiläinen
-Pickford : Santeri Lindfors
-Rico : Jere Lehtosaari
+Evans : Petri Jokisalo
+Fredericks : Martti Siiteri
+Jiménez : Martti Siiteri
+Lacazette : Timo Tikkala
+Maddison : Jonne Sandström
+Maguire : Mikael Karlsson
+Maupay : Mikael Kourilehto
+McTominay : miikka lindfors
+Patrício : Ville Vääränen
+Rashford : Petri Jokisalo
+Richarlison : marko kettunen
+Robertson : miikka lindfors
+Schmeichel : marko kettunen
+Stephens : Santeri Välikoski
 Tielemans : Samu Lax
-Torreira : Toni Vuorinen
-Ward : Santeri Lindfors
-Willian : Antti Silvennoinen
-Zouma : Riku Järvelä
+van Aanholt : Riku Muurinen
 ----------------------------------------------
 KAHDELLA:
-Dunk : Riku Järvelä, Aleksi Korkeamäki
-Hudson-Odoi : Risto Soininen, Paavo Nylund
-Maguire : Risto Soininen, Toni Vuorinen
-Martial : Henrik Sylvan, Jaakko Urho
-Patrício : juuso kukkonen, Jussi Inkiläinen
-Rashford : Paavo Nylund, Toni Vuorinen
-Saka : juuso kukkonen, Riku Järvelä
+Ayew : Jaakko Ahtila, Aleksi Leppanen
+Callum Wilson : Teemu Honkanen, miikka lindfors
+Chilwell : marko kettunen, Jaakko Ahtila
+Dunk : Mikael Karlsson, Aleksi Leppanen
+Guendouzi : Santeri Välikoski, Timo Tikkala
+Haller : Mikael Kourilehto, Santeri Välikoski
+King : marko kettunen, Timo Tikkala
+Martial : Teemu Honkanen, Aleksi Leppanen
+Pieters : tatu pekkala, Jonne Sandström
+Yarmolenko : tatu pekkala, Jonne Sandström
 ----------------------------------------------
 KOLMELLA:
-Bernardo Silva : Roope Juvonen, Risto Soininen, Timo Nick
-Callum Wilson : Antti Silvennoinen, Jere Lehtosaari, Jussi Inkiläinen
-Chilwell : Jere Lehtosaari, Timo Nick, Jussi Inkiläinen
-Ederson : Antti Silvennoinen, Jere Lehtosaari, Toni Vuorinen
-Maddison : Antti Silvennoinen, Heikki Oksanen, Jussi Inkiläinen
-Robertson : Roope Juvonen, Jaakko Urho, Timo Nick
-Wan-Bissaka : Toni Vuorinen, Timo Nick, Jussi Inkiläinen
-Yarmolenko : Riku Järvelä, Teemu Kallio, Jere Lehtosaari
+Agüero : Samu Lax, Riku Muurinen, Jonne Sandström
+Digne : ilkka soini, Samu Lax, Riku Muurinen
+Diop : Santeri Välikoski, Ville Vääränen, Jonne Sandström
+Ederson : tatu pekkala, Mikael Karlsson, Jonne Sandström
+Henderson : Martti Siiteri, Riku Muurinen, Markus Sairanen
+James : tatu pekkala, Kim Hipari, marko kettunen
+Pereira : tatu pekkala, Martti Siiteri, Timo Tikkala
+Pope : Teemu Honkanen, Samu Lax, Aleksi Leppanen
+Tomori : Martti Siiteri, Markus Sairanen, Jaakko Ahtila
