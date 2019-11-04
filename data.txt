@@ -1,61 +1,54 @@
-MANAGERIT 10KPL
+MANAGERIT 20KPL
 ----------------------------------------------
 KAPTEENIT:
-Agüero: Jani Pohjonen
-Callum Wilson: Mika Hämäläinen
-De Bruyne: Mikael Blom
-Sterling: Antti Alestalo, Anssi Heinonen, Matti Härkönen, Eero Voipio, Arttu Borhers, Elmo Hongisto, Juha Kuula
+De Bruyne: Antti Silvennoinen, Roope Juvonen, Aleksi Halme, Jyrki Kalaja, Paavo Nylund
+Sterling: juuso kukkonen, Heikki Oksanen, Henrik Sylvan, Risto Soininen, Teemu Kallio, Aleksi Korkeamäki, Jere Lehtosaari
+Salah: Jaakko Urho
+Agüero: Samu Lax, Riku Järvelä, Ilari Piipponen, Toni Vuorinen, Santeri Lindfors
+Mané: Timo Nick
+undefined: Jussi Inkiläinen
 ----------------------------------------------
 DIFFERENTIAALIT
 YHDELLÄ:
-Ayew : Juha Kuula
-Bernardo Silva : Arttu Borhers
-Cantwell : Anssi Heinonen
-Ceballos : Antti Alestalo
-Chambers : Mika Hämäläinen
-Cresswell : Anssi Heinonen
-Foster : Elmo Hongisto
-Fredericks : Matti Härkönen
-Gazzaniga : Eero Voipio
-Haller : Eero Voipio
-James : Arttu Borhers
-Kolasinac : Mikael Blom
-Lascelles : Juha Kuula
-Leno : Mikael Blom
-Mariappa : Elmo Hongisto
-Martial : Arttu Borhers
-Maupay : Arttu Borhers
-Montoya : Antti Alestalo
-Moutinho : Juha Kuula
-Ndidi : Juha Kuula
-Patrício : Arttu Borhers
-Pieters : Anssi Heinonen
-Pope : Anssi Heinonen
-Rico : Eero Voipio
-Saka : Jani Pohjonen
-Sokratis : Arttu Borhers
-Söyüncü : Eero Voipio
-van Aanholt : Elmo Hongisto
-van Dijk : Mika Hämäläinen
-Walker : Elmo Hongisto
-Zouma : Antti Alestalo
+Aké : Jussi Inkiläinen
+Azpilicueta : Ilari Piipponen
+Barnes : Teemu Kallio
+Cantwell : Timo Nick
+Connolly : juuso kukkonen
+Cresswell : Samu Lax
+de Gea : Ilari Piipponen
+Digne : Samu Lax
+Dubravka : Roope Juvonen
+Evans : Antti Silvennoinen
+Gazzaniga : Risto Soininen
+James : Jyrki Kalaja
+Leno : Teemu Kallio
+McTominay : Aleksi Halme
+Moutinho : Toni Vuorinen
+Ndombele : Jussi Inkiläinen
+Pickford : Santeri Lindfors
+Rico : Jere Lehtosaari
+Tielemans : Samu Lax
+Torreira : Toni Vuorinen
+Ward : Santeri Lindfors
+Willian : Antti Silvennoinen
+Zouma : Riku Järvelä
 ----------------------------------------------
 KAHDELLA:
-Agüero : Antti Alestalo, Jani Pohjonen
-Callum Wilson : Mika Hämäläinen, Eero Voipio
-Diop : Mikael Blom, Arttu Borhers
-Ederson : Jani Pohjonen, Juha Kuula
-Firmino : Elmo Hongisto, Juha Kuula
-Maddison : Matti Härkönen, Mika Hämäläinen
-Mané : Jani Pohjonen, Juha Kuula
-Pereira : Mika Hämäläinen, Juha Kuula
-Salah : Matti Härkönen, Mikael Blom
-Tomori : Eero Voipio, Jani Pohjonen
-Vardy : Anssi Heinonen, Juha Kuula
-Wijnaldum : Mikael Blom, Elmo Hongisto
+Dunk : Riku Järvelä, Aleksi Korkeamäki
+Hudson-Odoi : Risto Soininen, Paavo Nylund
+Maguire : Risto Soininen, Toni Vuorinen
+Martial : Henrik Sylvan, Jaakko Urho
+Patrício : juuso kukkonen, Jussi Inkiläinen
+Rashford : Paavo Nylund, Toni Vuorinen
+Saka : juuso kukkonen, Riku Järvelä
 ----------------------------------------------
 KOLMELLA:
-Alexander-Arnold : Matti Härkönen, Mika Hämäläinen, Arttu Borhers
-Otamendi : Mikael Blom, Eero Voipio, Jani Pohjonen
-Pukki : Matti Härkönen, Mikael Blom, Jani Pohjonen
-Ryan : Antti Alestalo, Matti Härkönen, Mika Hämäläinen
+Bernardo Silva : Roope Juvonen, Risto Soininen, Timo Nick
+Callum Wilson : Antti Silvennoinen, Jere Lehtosaari, Jussi Inkiläinen
+Chilwell : Jere Lehtosaari, Timo Nick, Jussi Inkiläinen
+Ederson : Antti Silvennoinen, Jere Lehtosaari, Toni Vuorinen
+Maddison : Antti Silvennoinen, Heikki Oksanen, Jussi Inkiläinen
+Robertson : Roope Juvonen, Jaakko Urho, Timo Nick
+Wan-Bissaka : Toni Vuorinen, Timo Nick, Jussi Inkiläinen
+Yarmolenko : Riku Järvelä, Teemu Kallio, Jere Lehtosaari

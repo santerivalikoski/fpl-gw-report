@@ -1,15 +1,13 @@
 const fs = require('fs')
 const fileWriter = fs.createWriteStream('data.txt')
-console.log('report.js read')
+
 let content
-function GetReport() {
-    console.log('GetReport started')
-    fs.readFile('./db.json', function read(err, data) {
-        if (err) throw err
-        content = data;
-        processFile();
-    })
-}
+
+fs.readFile('./db.json', function read(err, data) {
+    if (err) throw err
+    content = data;
+    processFile();
+})
 
 
 // FUNCTIONS
@@ -71,8 +69,13 @@ function getCaptainList(managers) {
             if (captain.captain === manager.captain) captain.owners.add(manager.manager)
         }
     }
-    captainList.sort((a, b) => a.captain.localeCompare(b.captain))
+    try {
+        captainList.sort((a, b) => a.captain.localeCompare(b.captain))
     captainList.sort((a, b) => Number(a.owners.size) - Number(b.owners.size))
+    }
+    catch {
+        console.log('Jonkun kapteeni heitetetty vaihtoon, ohjelma toimii kunnolla vaan ennenkuin kierros on loppunut.')
+    }    
     return captainList
 }
 
@@ -135,5 +138,3 @@ function processFile() {
     fileWriter.end()
     console.log('Gameweek report saved in data.txt!')
 }
-GetReport()
-module.exports = {GetReport}
