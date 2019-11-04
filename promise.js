@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs')
+
 let tulostus = [{}]
 let urlList = new Set()
 let leagueUrl = 'https://fantasy.premierleague.com/leagues/727333/standings/c'
