@@ -109,5 +109,5 @@ let promise = new Promise(function(resolve, reject) {
 })();
 })
 promise.then(function(val) {
-    console.log('vikana')
+    console.log('Finished!')
 })

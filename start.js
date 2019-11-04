@@ -1,9 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs')
-
 let tulostus = [{}]
 let urlList = new Set()
-let leagueUrl = 'https://fantasy.premierleague.com/leagues/727333/standings/c'
+let leagueUrl = 'https://fantasy.premierleague.com/leagues/383530/standings/c'
 let managers = [{}]
 let pituus = 0
 let laskuri = 0
@@ -37,12 +36,12 @@ let promise = new Promise(function (resolve, reject) {
     })();
 })
 promise.then(function (val) {
-    console.log(val)
+    console.log(`Collecting teams for ${val}`)
     for (let i = 0; i < tulostus[1].length; i++) {
         urlList.add(`https://fantasy.premierleague.com${tulostus[1][i].name}`)
     }
     console.log(urlList)
-    console.log(`Starting gameweek report`);
+    console.log(`Starting puppeteer crawl...`);
         (async () => {
             for (const teamUrl of urlList) {
                 laskuri++
@@ -108,6 +107,3 @@ promise.then(function (val) {
             }
         })();
 })
-
-
-console.log('koodin loppu')

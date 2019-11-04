@@ -1,2 +1,61 @@
-MANAGERIT 19KPL: 
- ----------------------------------------------
+MANAGERIT 10KPL
+----------------------------------------------
+KAPTEENIT:
+Agüero: Jani Pohjonen
+Callum Wilson: Mika Hämäläinen
+De Bruyne: Mikael Blom
+Sterling: Antti Alestalo, Anssi Heinonen, Matti Härkönen, Eero Voipio, Arttu Borhers, Elmo Hongisto, Juha Kuula
+----------------------------------------------
+DIFFERENTIAALIT
+YHDELLÄ:
+Ayew : Juha Kuula
+Bernardo Silva : Arttu Borhers
+Cantwell : Anssi Heinonen
+Ceballos : Antti Alestalo
+Chambers : Mika Hämäläinen
+Cresswell : Anssi Heinonen
+Foster : Elmo Hongisto
+Fredericks : Matti Härkönen
+Gazzaniga : Eero Voipio
+Haller : Eero Voipio
+James : Arttu Borhers
+Kolasinac : Mikael Blom
+Lascelles : Juha Kuula
+Leno : Mikael Blom
+Mariappa : Elmo Hongisto
+Martial : Arttu Borhers
+Maupay : Arttu Borhers
+Montoya : Antti Alestalo
+Moutinho : Juha Kuula
+Ndidi : Juha Kuula
+Patrício : Arttu Borhers
+Pieters : Anssi Heinonen
+Pope : Anssi Heinonen
+Rico : Eero Voipio
+Saka : Jani Pohjonen
+Sokratis : Arttu Borhers
+Söyüncü : Eero Voipio
+van Aanholt : Elmo Hongisto
+van Dijk : Mika Hämäläinen
+Walker : Elmo Hongisto
+Zouma : Antti Alestalo
+----------------------------------------------
+KAHDELLA:
+Agüero : Antti Alestalo, Jani Pohjonen
+Callum Wilson : Mika Hämäläinen, Eero Voipio
+Diop : Mikael Blom, Arttu Borhers
+Ederson : Jani Pohjonen, Juha Kuula
+Firmino : Elmo Hongisto, Juha Kuula
+Maddison : Matti Härkönen, Mika Hämäläinen
+Mané : Jani Pohjonen, Juha Kuula
+Pereira : Mika Hämäläinen, Juha Kuula
+Salah : Matti Härkönen, Mikael Blom
+Tomori : Eero Voipio, Jani Pohjonen
+Vardy : Anssi Heinonen, Juha Kuula
+Wijnaldum : Mikael Blom, Elmo Hongisto
+----------------------------------------------
+KOLMELLA:
+Alexander-Arnold : Matti Härkönen, Mika Hämäläinen, Arttu Borhers
+Otamendi : Mikael Blom, Eero Voipio, Jani Pohjonen
+Pukki : Matti Härkönen, Mikael Blom, Jani Pohjonen
+Ryan : Antti Alestalo, Matti Härkönen, Mika Hämäläinen
