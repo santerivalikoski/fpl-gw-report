@@ -9,7 +9,6 @@ fs.readFile('./db.json', function read(err, data) {
     processFile();
 })
 
-
 // FUNCTIONS
 function getCaptain(objectList, manager) {
     for (const player of objectList) {
@@ -71,12 +70,24 @@ function getCaptainList(managers) {
     }
     try {
         captainList.sort((a, b) => a.captain.localeCompare(b.captain))
-    captainList.sort((a, b) => Number(a.owners.size) - Number(b.owners.size))
+        captainList.sort((a, b) => Number(a.owners.size) - Number(b.owners.size))
     }
     catch {
-        console.log('Jonkun kapteeni heitetetty vaihtoon, ohjelma toimii kunnolla vaan ennenkuin kierros on loppunut.')
-    }    
+        console.log('Jonkun kapteeni heitetetty vaihtoon, ohjelma toimii kunnolla vain ennenkuin kierros on loppunut.')
+    }
     return captainList
+}
+function getMostPopular(owners, managerList, topX) {
+    let popularPlayers = new Array()
+    for(const player of owners) {
+        popularPlayers.push({
+            player: player.player,
+            popularity: Math.round(player.owners.size / managerList.size * 100)
+        })
+    }
+    popularPlayers.sort((a, b) => Number(b.popularity) - Number(a.popularity))
+    popularPlayers = popularPlayers.slice(0, topX)
+    return popularPlayers
 }
 
 // MAIN PROGRAM
@@ -108,6 +119,7 @@ function processFile() {
     // print data.txt
     const owners = getOwners(objectList)
     const captains = getCaptainList(managers)
+    const popularity = getMostPopular(owners, managerList, 10)
     const single = filterDifferentials(owners, 1)
     const double = filterDifferentials(owners, 2)
     const triple = filterDifferentials(owners, 3)
@@ -135,6 +147,12 @@ function processFile() {
         const owners = Array.from(s.owners).join(", ")
         fileWriter.write(`\n${s.player} : ${owners}`)
     }
+    fileWriter.write('\n----------------------------------------------')
+    fileWriter.write('\nSUOSITUIMMAT:')
+    for (const s of popularity) {
+        fileWriter.write(`\n${s.player} : ${s.popularity}%`)
+    }
+    fileWriter.write(`\nYhteensä ${owners.length} eri pelaajaa valittu.`)
     fileWriter.end()
     console.log('Gameweek report saved in data.txt!')
 }
