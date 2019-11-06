@@ -82,10 +82,11 @@ function getMostPopular(owners, managerList, topX) {
     for(const player of owners) {
         popularPlayers.push({
             player: player.player,
-            popularity: Math.round(player.owners.size / managerList.size * 100)
+            popularity: player.owners.size
         })
     }
     popularPlayers.sort((a, b) => Number(b.popularity) - Number(a.popularity))
+    console.log(popularPlayers)
     popularPlayers = popularPlayers.slice(0, topX)
     return popularPlayers
 }
@@ -150,9 +151,9 @@ function processFile() {
     fileWriter.write('\n----------------------------------------------')
     fileWriter.write('\nSUOSITUIMMAT:')
     for (const s of popularity) {
-        fileWriter.write(`\n${s.player} : ${s.popularity}%`)
+        fileWriter.write(`\n${s.player} : ${s.popularity}/${managerList.size}`)
     }
-    fileWriter.write(`\nYhteensä ${owners.length} eri pelaajaa valittu.`)
+    fileWriter.write(`\n\nYhteensä ${owners.length} eri pelaajaa valittu.`)
     fileWriter.end()
     console.log('Gameweek report saved in data.txt!')
 }

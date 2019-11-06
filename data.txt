@@ -51,14 +51,15 @@ Pope : Teemu Honkanen, Samu Lax, Aleksi Leppanen
 Tomori : Martti Siiteri, Markus Sairanen, Jaakko Ahtila
 ----------------------------------------------
 SUOSITUIMMAT:
-Abraham : 84%
-Lundstram : 84%
-Sterling : 79%
-Vardy : 68%
-Mount : 63%
-De Bruyne : 58%
-Alexander-Arnold : 42%
-Ryan : 42%
-Salah : 42%
-Söyüncü : 42%
+Abraham : 16/19
+Lundstram : 16/19
+Sterling : 15/19
+Vardy : 13/19
+Mount : 12/19
+De Bruyne : 11/19
+Alexander-Arnold : 8/19
+Ryan : 8/19
+Salah : 8/19
+Söyüncü : 8/19
+
 Yhteensä 52 eri pelaajaa valittu.
