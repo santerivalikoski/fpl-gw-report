@@ -18,6 +18,29 @@ function getCaptain(objectList, manager) {
     }
     return undefined
 }
+function getChips(objectList) {
+    let chipReport = []
+    let chipsUsed = new Set()
+    for (const player of objectList) {
+        if (player.chipused != 'false') {
+            chipsUsed.add(player.chipused)
+        }
+    }
+    chipsUsed.delete(undefined)
+    for (const chip of chipsUsed) {
+        let managers = new Set()
+        for (const player of objectList) {
+            if (player.chipused == chip) {
+                managers.add(player.manager)
+            }
+        }
+        chipReport.push({
+            chip: chip,
+            managers: managers
+        })
+    }
+    return chipReport
+}
 function getPlayers(objectList, manager) {
     let playerList = new Set()
     for (const player of objectList) {
@@ -79,14 +102,13 @@ function getCaptainList(managers) {
 }
 function getMostPopular(owners, managerList, topX) {
     let popularPlayers = new Array()
-    for(const player of owners) {
+    for (const player of owners) {
         popularPlayers.push({
             player: player.player,
             popularity: player.owners.size
         })
     }
     popularPlayers.sort((a, b) => Number(b.popularity) - Number(a.popularity))
-    console.log(popularPlayers)
     popularPlayers = popularPlayers.slice(0, topX)
     return popularPlayers
 }
@@ -104,7 +126,8 @@ function processFile() {
             objectList.push({
                 manager: o2[1].manager,
                 captainBoolean: o2[1].captain,
-                playerName: o2[1].name
+                playerName: o2[1].name,
+                chipused: o2[1].chipused
             })
             managerList.add(o2[1].manager)
         }
@@ -121,10 +144,18 @@ function processFile() {
     const owners = getOwners(objectList)
     const captains = getCaptainList(managers)
     const popularity = getMostPopular(owners, managerList, 10)
+    const chips = getChips(objectList)
     const single = filterDifferentials(owners, 1)
     const double = filterDifferentials(owners, 2)
     const triple = filterDifferentials(owners, 3)
     fileWriter.write(`MANAGERIT ${managerList.size}KPL\n----------------------------------------------`)
+    if (chips.length > 0) {
+        for (const chip of chips) {
+            const managers = Array.from(chip.managers).join(", ")
+            fileWriter.write(`\n${chip.chip}: ${managers}`)
+        }
+        fileWriter.write('\n----------------------------------------------')
+    }
     fileWriter.write('\nKAPTEENIT:')
     for (const captain of captains) {
         const owners = Array.from(captain.owners).join(", ")
@@ -134,24 +165,24 @@ function processFile() {
     fileWriter.write('\nDIFFERENTIAALIT\nYHDELLÄ:')
     for (const s of single) {
         const owners = Array.from(s.owners).join(", ")
-        fileWriter.write(`\n${s.player} : ${owners}`)
+        fileWriter.write(`\n${s.player}: ${owners}`)
     }
     fileWriter.write('\n----------------------------------------------')
     fileWriter.write('\nKAHDELLA:')
     for (const s of double) {
         const owners = Array.from(s.owners).join(", ")
-        fileWriter.write(`\n${s.player} : ${owners}`)
+        fileWriter.write(`\n${s.player}: ${owners}`)
     }
     fileWriter.write('\n----------------------------------------------')
     fileWriter.write('\nKOLMELLA:')
     for (const s of triple) {
         const owners = Array.from(s.owners).join(", ")
-        fileWriter.write(`\n${s.player} : ${owners}`)
+        fileWriter.write(`\n${s.player}: ${owners}`)
     }
     fileWriter.write('\n----------------------------------------------')
     fileWriter.write('\nSUOSITUIMMAT:')
     for (const s of popularity) {
-        fileWriter.write(`\n${s.player} : ${s.popularity}/${managerList.size}`)
+        fileWriter.write(`\n${s.player}: ${s.popularity}/${managerList.size}`)
     }
     fileWriter.write(`\n\nYhteensä ${owners.length} eri pelaajaa valittu.`)
     fileWriter.end()

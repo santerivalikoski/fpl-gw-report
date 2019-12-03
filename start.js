@@ -36,74 +36,79 @@ let promise = new Promise(function (resolve, reject) {
     })();
 })
 promise.then(function (val) {
-    console.log(`Collecting teams for ${val}`)
+    console.log(`Collecting teams from '${val}'`)
     for (let i = 0; i < tulostus[1].length; i++) {
         urlList.add(`https://fantasy.premierleague.com${tulostus[1][i].name}`)
     }
-    console.log(urlList)
+    console.log(`Found ${pituus} teams.`)
     console.log(`Starting puppeteer crawl...`);
-        (async () => {
-            for (const teamUrl of urlList) {
-                laskuri++
-                const browser = await puppeteer.launch({ headless: true });
-                const page = await browser.newPage();
-                // await page.setViewport({ width: 1920, height: 926 });
-                await page.goto(teamUrl, { waitUntil: 'networkidle2' });
-                // get player details
-                let teamData = await page.evaluate(() => {
-                    let players = [];
-                    let manager = document.querySelector('div[class="sc-bdVaJa jWQvkU"] > h2[class="Entry__EntryName-sc-1kf863-0 frXpNV"]').innerText
+    (async () => {
+        for (const teamUrl of urlList) {
+            laskuri++
+            const browser = await puppeteer.launch({ headless: true });
+            const page = await browser.newPage();
+            // await page.setViewport({ width: 1920, height: 926 });
+            await page.goto(teamUrl, { waitUntil: 'networkidle2' });
+            // get player details
+            let teamData = await page.evaluate(() => {
+                let players = [];
+                let manager = document.querySelector('div[class="sc-bdVaJa jWQvkU"] > h2[class="Entry__EntryName-sc-1kf863-0 frXpNV"]').innerText
 
-                    // get the player elements
-                    let playersElms = document.querySelectorAll('div[class="Pitch__PitchUnit-sc-1mctasb-3 gYXrCB"]')
-
-                    // get the player data
-                    playersElms.forEach((playerElement) => {
-                        let playerJson = {};
-                        try {
-                            playerJson.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 hZsmkV"]').innerText
-                            playerJson.captain = false
-                            playerJson.manager = manager
-                            if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
-                                playerJson.captain = true
-                            }
-                        }
-                        catch (exception) {
-                            console.log('exception: ', exception)
-                        }
-                        players.push(playerJson);
-                    });
-                    // KELTASELLA JA PUNASELLA OLEVAT PITÄÄ OTTAA ERIKSEEN, PUNASIA EI TÄLLÄ HETKELLÄ HAETA OLLENKAAN
-                    playersElms.forEach((playerElement) => {
-                        let yellowPlayer = {};
-                        try {
-                            yellowPlayer.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 fXSnzv"]').innerText
-                            yellowPlayer.captain = false
-                            yellowPlayer.manager = manager
-                            if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
-                                yellowPlayer.captain = true
-                            }
-                        }
-                        catch (exception) {
-                            console.log('exception: ', exception)
-                        }
-                        players.push(yellowPlayer);
-                    });
-                    return players;
-                });
-                managers.push(teamData)
-                console.log(`${laskuri} / ${pituus} teams loaded.`)
-                await browser.close()
-
-                if (laskuri === pituus) {
-                    console.log('Writing file...')
-                    fs.writeFile("./db.json", JSON.stringify(managers), function (err) {
-                        if (err) {
-                            return console.log(err)
-                        }
-                        console.log("The file was saved!");
-                    })
+                // get the player elements
+                let playersElms = document.querySelectorAll('div[class="Pitch__PitchUnit-sc-1mctasb-3 gYXrCB"]')
+                let chipUsed = 'false'
+                if (document.querySelector('div[class="EntryEvent__ChipStatus-l17rqm-15 csGQqo"]')) {
+                    chipUsed = document.querySelector('div[class="EntryEvent__ChipStatus-l17rqm-15 csGQqo"]').innerText
                 }
+                // get the player data
+                playersElms.forEach((playerElement) => {
+                    let playerJson = {};
+                    try {
+                        playerJson.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 hZsmkV"]').innerText
+                        playerJson.captain = false
+                        playerJson.manager = manager
+                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
+                            playerJson.captain = true
+                        }
+                        playerJson.chipused = chipUsed
+                    }
+                    catch (exception) {
+                        console.log('exception: ', exception)
+                    }
+                    players.push(playerJson);
+                });
+                // KELTASELLA JA PUNASELLA OLEVAT PITÄÄ OTTAA ERIKSEEN, PUNASIA EI TÄLLÄ HETKELLÄ HAETA OLLENKAAN
+                playersElms.forEach((playerElement) => {
+                    let yellowPlayer = {};
+                    try {
+                        yellowPlayer.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 fXSnzv"]').innerText
+                        yellowPlayer.captain = false
+                        yellowPlayer.manager = manager
+                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
+                            yellowPlayer.captain = true
+                        }
+                        playerJson.chipused = chipUsed
+                    }
+                    catch (exception) {
+                        console.log('exception: ', exception)
+                    }
+                    players.push(yellowPlayer);
+                });
+                return players;
+            });
+            managers.push(teamData)
+            console.log(`${laskuri} / ${pituus} teams loaded.`)
+            await browser.close()
+
+            if (laskuri === pituus) {
+                console.log('Writing file...')
+                fs.writeFile("./db.json", JSON.stringify(managers), function (err) {
+                    if (err) {
+                        return console.log(err)
+                    }
+                    console.log("The file 'db.json' was saved! Now run 'node report.js'");
+                })
             }
-        })();
+        }
+    })();
 })

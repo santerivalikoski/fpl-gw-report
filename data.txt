@@ -1,65 +1,67 @@
 MANAGERIT 19KPL
 ----------------------------------------------
 KAPTEENIT:
-Vardy: marko kettunen
-De Bruyne: Martti Siiteri, Timo Tikkala
-Agüero: Samu Lax, Riku Muurinen, Jonne Sandström
-Sterling: ilkka soini, tatu pekkala, Kim Hipari, Teemu Honkanen, Petri Jokisalo, Mikael Kourilehto, miikka lindfors, Mikael Karlsson, Markus Sairanen, Santeri Välikoski, Jaakko Ahtila, Ville Vääränen, Aleksi Leppanen
+Aubameyang: Kim Hipari
+Jiménez: marko kettunen
+Lacazette: Timo Tikkala
+Rashford: tatu pekkala
+Sterling: Teemu Honkanen, Mikael Karlsson
+Kane: miikka lindfors, Santeri Välikoski, Aleksi Leppanen
+Mané: Martti Siiteri, Jaakko Ahtila, Riku Muurinen, Ville Vääränen
+Vardy: ilkka soini, Samu Lax, Mikael Kourilehto, Petri Jokisalo, Markus Sairanen, Jonne Sandström
 ----------------------------------------------
 DIFFERENTIAALIT
 YHDELLÄ:
-Cantwell : Petri Jokisalo
-Cresswell : Samu Lax
-Evans : Petri Jokisalo
-Fredericks : Martti Siiteri
-Jiménez : Martti Siiteri
-Lacazette : Timo Tikkala
-Maddison : Jonne Sandström
-Maguire : Mikael Karlsson
-Maupay : Mikael Kourilehto
-McTominay : miikka lindfors
-Patrício : Ville Vääränen
-Rashford : Petri Jokisalo
-Richarlison : marko kettunen
-Robertson : miikka lindfors
-Schmeichel : marko kettunen
-Stephens : Santeri Välikoski
-Tielemans : Samu Lax
-van Aanholt : Riku Muurinen
+Ayew: Jaakko Ahtila
+de Gea: tatu pekkala
+Deulofeu: Ville Vääränen
+Ederson: Mikael Karlsson
+Fleck: Kim Hipari
+Foster: Riku Muurinen
+Greenwood: Jonne Sandström
+Guendouzi: Timo Tikkala
+Heaton: Jaakko Ahtila
+Lacazette: Timo Tikkala
+Maguire: Mikael Karlsson
+Patrício: Ville Vääränen
+Pérez: Mikael Kourilehto
+Pickford: marko kettunen
+Richarlison: marko kettunen
+Rico: Petri Jokisalo
+Tielemans: tatu pekkala
+Traoré: Jaakko Ahtila
+van Aanholt: Riku Muurinen
+Ward-Prowse: Santeri Välikoski
 ----------------------------------------------
 KAHDELLA:
-Ayew : Jaakko Ahtila, Aleksi Leppanen
-Callum Wilson : Teemu Honkanen, miikka lindfors
-Chilwell : marko kettunen, Jaakko Ahtila
-Dunk : Mikael Karlsson, Aleksi Leppanen
-Guendouzi : Santeri Välikoski, Timo Tikkala
-Haller : Mikael Kourilehto, Santeri Välikoski
-King : marko kettunen, Timo Tikkala
-Martial : Teemu Honkanen, Aleksi Leppanen
-Pieters : tatu pekkala, Jonne Sandström
-Yarmolenko : tatu pekkala, Jonne Sandström
+Aubameyang: Kim Hipari, Santeri Välikoski
+Digne: Samu Lax, Riku Muurinen
+Evans: Teemu Honkanen, Petri Jokisalo
+Gazzaniga: Kim Hipari, miikka lindfors
+James: tatu pekkala, marko kettunen
+McGinn: Petri Jokisalo, Timo Tikkala
+Pieters: tatu pekkala, Jonne Sandström
+Pukki: Teemu Honkanen, Markus Sairanen
+Salah: Mikael Karlsson, Jaakko Ahtila
+Schmeichel: Timo Tikkala, Jonne Sandström
 ----------------------------------------------
 KOLMELLA:
-Agüero : Samu Lax, Riku Muurinen, Jonne Sandström
-Digne : ilkka soini, Samu Lax, Riku Muurinen
-Diop : Santeri Välikoski, Ville Vääränen, Jonne Sandström
-Ederson : tatu pekkala, Mikael Karlsson, Jonne Sandström
-Henderson : Martti Siiteri, Riku Muurinen, Markus Sairanen
-James : tatu pekkala, Kim Hipari, marko kettunen
-Pereira : tatu pekkala, Martti Siiteri, Timo Tikkala
-Pope : Teemu Honkanen, Samu Lax, Aleksi Leppanen
-Tomori : Martti Siiteri, Markus Sairanen, Jaakko Ahtila
+Pereira: tatu pekkala, Martti Siiteri, Timo Tikkala
+Rashford: tatu pekkala, Petri Jokisalo, Timo Tikkala
+Robertson: Mikael Kourilehto, miikka lindfors, Santeri Välikoski
+Son: Teemu Honkanen, Samu Lax, Markus Sairanen
+Tomori: Martti Siiteri, Markus Sairanen, Jaakko Ahtila
 ----------------------------------------------
 SUOSITUIMMAT:
-Abraham : 16/19
-Lundstram : 16/19
-Sterling : 15/19
-Vardy : 13/19
-Mount : 12/19
-De Bruyne : 11/19
-Alexander-Arnold : 8/19
-Ryan : 8/19
-Salah : 8/19
-Söyüncü : 8/19
+Lundstram: 18/19
+Vardy: 18/19
+Mané: 13/19
+Mount: 11/19
+De Bruyne: 10/19
+Söyüncü: 10/19
+Alexander-Arnold: 8/19
+Sterling: 8/19
+Jiménez: 7/19
+Martial: 7/19
 
-Yhteensä 52 eri pelaajaa valittu.
+Yhteensä 55 eri pelaajaa valittu.
