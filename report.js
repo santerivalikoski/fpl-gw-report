@@ -109,7 +109,7 @@ function getMostPopular(owners, managerList, topX) {
         })
     }
     popularPlayers.sort((a, b) => Number(b.popularity) - Number(a.popularity))
-    popularPlayers = popularPlayers.slice(0, topX)
+    // popularPlayers = popularPlayers.slice(0, topX)
     return popularPlayers
 }
 

@@ -67,7 +67,8 @@ promise.then(function (val) {
                         playerJson.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 hZsmkV"]').innerText
                         playerJson.captain = false
                         playerJson.manager = manager
-                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
+                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]') ||
+                            playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 gcDiCP"]')) {
                             playerJson.captain = true
                         }
                         playerJson.chipused = chipUsed
@@ -84,7 +85,8 @@ promise.then(function (val) {
                         yellowPlayer.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 fXSnzv"]').innerText
                         yellowPlayer.captain = false
                         yellowPlayer.manager = manager
-                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]')) {
+                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]') ||
+                            playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 gcDiCP"]')) {
                             yellowPlayer.captain = true
                         }
                         playerJson.chipused = chipUsed
@@ -94,6 +96,43 @@ promise.then(function (val) {
                     }
                     players.push(yellowPlayer);
                 });
+                // ORANSSI 
+                playersElms.forEach((playerElement) => {
+                    let orangePlayer = {};
+                    try {
+                        orangePlayer.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 ikDGUK"]').innerText
+                        orangePlayer.captain = false
+                        orangePlayer.manager = manager
+                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]') ||
+                            playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 gcDiCP"]')) {
+                            orangePlayer.captain = true
+                        }
+                        playerJson.chipused = chipUsed
+                    }
+                    catch (exception) {
+                        console.log('exception: ', exception)
+                    }
+                    players.push(orangePlayer);
+                });
+                // PUNA  
+                playersElms.forEach((playerElement) => {
+                    let redPlayer = {};
+                    try {
+                        redPlayer.name = playerElement.querySelector('div[class="PitchElementData__ElementName-sc-1u4y6pr-0 iSVzMi"]').innerText
+                        redPlayer.captain = false
+                        redPlayer.manager = manager
+                        if (playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 giBNVk"]') ||
+                            playerElement.querySelector('svg[class="TeamPitchElement__StyledCaptain-sc-202u14-1 gcDiCP"]')) {
+                            redPlayer.captain = true
+                        }
+                        playerJson.chipused = chipUsed
+                    }
+                    catch (exception) {
+                        console.log('exception: ', exception)
+                    }
+                    players.push(redPlayer);
+                });            
+
                 return players;
             });
             managers.push(teamData)

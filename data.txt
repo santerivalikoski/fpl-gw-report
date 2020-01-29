@@ -4,10 +4,11 @@ Triple Captain played: Mikael Kourilehto, ilkka soini, Teemu Honkanen, miikka li
 Wildcard played: Aleksi Leppanen
 ----------------------------------------------
 KAPTEENIT:
+Firmino: miikka lindfors
 Vardy: Timo Tikkala
 Alexander-Arnold: Kim Hipari, Aleksi Leppanen
-Salah: marko kettunen, Riku Muurinen, Mikael Karlsson, Ville Vääränen
-undefined: Mikael Kourilehto, ilkka soini, Martti Siiteri, Petri Jokisalo, tatu pekkala, Teemu Honkanen, Samu Lax, miikka lindfors, Jaakko Ahtila, Markus Sairanen, Jonne Sandström, Santeri Välikoski
+Salah: ilkka soini, Teemu Honkanen, marko kettunen, Riku Muurinen, Mikael Karlsson, Santeri Välikoski, Ville Vääränen
+Mané: Mikael Kourilehto, Martti Siiteri, Petri Jokisalo, tatu pekkala, Samu Lax, Jaakko Ahtila, Markus Sairanen, Jonne Sandström
 ----------------------------------------------
 DIFFERENTIAALIT
 YHDELLÄ:
@@ -52,13 +53,55 @@ Schmeichel: Jonne Sandström, Timo Tikkala, Ville Vääränen
 SUOSITUIMMAT:
 Vardy: 14/19
 De Bruyne: 13/19
+Mané: 13/19
 Alexander-Arnold: 11/19
 Ings: 11/19
 Martial: 11/19
+Abraham: 9/19
 Firmino: 9/19
 van Dijk: 8/19
 Kelly: 7/19
 Ryan: 7/19
 Salah: 7/19
+Söyüncü: 7/19
+Grealish: 6/19
+Traoré: 6/19
+Calvert-Lewin: 5/19
+Agüero: 4/19
+Alli: 4/19
+Gomez: 4/19
+Holgate: 3/19
+Noble: 3/19
+Rico: 3/19
+Robertson: 3/19
+Schmeichel: 3/19
+Chilwell: 2/19
+Evans: 2/19
+Lundstram: 2/19
+Maddison: 2/19
+Pereira: 2/19
+Pope: 2/19
+Ramsdale: 2/19
+Sidibé: 2/19
+Aurier: 1/19
+Cantwell: 1/19
+David Silva: 1/19
+Digne: 1/19
+Dunk: 1/19
+Ederson: 1/19
+Foster: 1/19
+Gazzaniga: 1/19
+Greenwood: 1/19
+Haller: 1/19
+Jiménez: 1/19
+Mahrez: 1/19
+McCarthy: 1/19
+Mount: 1/19
+Pérez: 1/19
+Pickford: 1/19
+Sterling: 1/19
+Walker: 1/19
+Wan-Bissaka: 1/19
+Zaha: 1/19
 
-Yhteensä 50 eri pelaajaa valittu.
+Yhteensä 52 eri pelaajaa valittu.
