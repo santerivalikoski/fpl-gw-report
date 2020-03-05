@@ -11,6 +11,7 @@ let promise = new Promise(function (resolve, reject) {
         const browser = await puppeteer.launch({ headless: true });
         const page = await browser.newPage();
         await page.goto(leagueUrl, { waitUntil: 'networkidle2' });
+        await page.waitForSelector('div[class="Copy-zj3yf2-0 kbodRR"]', { timeout: 20000 })
         let urlData = await page.evaluate(() => {
             let urls = []
             let leagueName = document.querySelector('div[class="Copy-zj3yf2-0 kbodRR"] > h2[class="Title-sc-9c7mfn-0 ldEDNa"]').innerText

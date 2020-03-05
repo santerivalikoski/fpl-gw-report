@@ -1,61 +1,70 @@
 MANAGERIT 19KPL
 ----------------------------------------------
-Wildcard played: Markus Sairanen
+Free Hit played: Kim Hipari
 ----------------------------------------------
 KAPTEENIT:
-Salah: ilkka soini, Teemu Honkanen, marko kettunen, Riku Muurinen, tatu pekkala, miikka lindfors, Samu Lax, Mikael Karlsson, Markus Sairanen, Santeri Välikoski, Timo Tikkala, Jonne Sandström, Ville Vääränen
-Aubameyang: Mikael Kourilehto, Petri Jokisalo
-Firmino: Martti Siiteri
-Richarlison: Kim Hipari
-undefined: Jaakko Ahtila
-Alexander-Arnold: Aleksi Leppanen
+Vardy: ilkka soini, Riku Muurinen, Aleksi Leppanen
+Salah: Teemu Honkanen, Mikael Kourilehto, Martti Siiteri, Petri Jokisalo, marko kettunen, Samu Lax, Santeri Välikoski, Markus Sairanen, Timo Tikkala, Jonne Sandström, Ville Vääränen
+undefined: Kim Hipari, tatu pekkala, Mikael Karlsson
+Ings: miikka lindfors
+Alexander-Arnold: Jaakko Ahtila
 ----------------------------------------------
 DIFFERENTIAALIT
 YHDELLÄ:
-Digne: Riku Muurinen
-Diop: marko kettunen
-Douglas Luiz: Kim Hipari
-Ederson: Mikael Karlsson
-Evans: Riku Muurinen
+Aarons: tatu pekkala
+Doherty: Timo Tikkala
+Dunk: Mikael Karlsson
+Fernández: Mikael Kourilehto
 Foster: Riku Muurinen
-Greenwood: tatu pekkala
-Mahrez: Martti Siiteri
-Martinelli: Santeri Välikoski
-McCarthy: Aleksi Leppanen
-Mount: Riku Muurinen
-Pérez: Markus Sairanen
-Pickford: marko kettunen
-Pope: Samu Lax
-Pukki: Samu Lax
-Walker: Timo Tikkala
-Wan-Bissaka: marko kettunen
+Giroud: Kim Hipari
+Gomez: Jaakko Ahtila
+Ighalo: tatu pekkala
+Maguire: miikka lindfors
+Pereira: tatu pekkala
+Pukki: Ville Vääränen
+Ramsdale: Martti Siiteri
+Rico: Petri Jokisalo
+Sidibé: Martti Siiteri
+Stephens: Markus Sairanen
+Ward: Petri Jokisalo
+Webster: Mikael Kourilehto
+Williams: Jaakko Ahtila
 Zaha: tatu pekkala
 ----------------------------------------------
 KAHDELLA:
-Holgate: Mikael Karlsson, Ville Vääränen
-Jiménez: Mikael Karlsson, Markus Sairanen
-Maddison: Santeri Välikoski, Jonne Sandström
-Pereira: tatu pekkala, Timo Tikkala
-Ramsdale: tatu pekkala, Kim Hipari
-Schmeichel: Jonne Sandström, Ville Vääränen
-Sidibé: Martti Siiteri, Samu Lax
-Söyüncü: Kim Hipari, Ville Vääränen
+Agüero: Jaakko Ahtila, Aleksi Leppanen
+Aurier: ilkka soini, Mikael Kourilehto
+Barnes: Mikael Kourilehto, Markus Sairanen
+Chilwell: marko kettunen, Mikael Karlsson
+Hanley: Teemu Honkanen, Aleksi Leppanen
+Holgate: Mikael Karlsson, Aleksi Leppanen
+Lascelles: Santeri Välikoski, Markus Sairanen
+Long: Santeri Välikoski, Timo Tikkala
+Maddison: Petri Jokisalo, Santeri Välikoski
+McCarthy: Markus Sairanen, Aleksi Leppanen
+Noble: ilkka soini, Mikael Karlsson
+Pérez: Santeri Välikoski, Markus Sairanen
+Tanganga: Ville Vääränen, Aleksi Leppanen
 ----------------------------------------------
 KOLMELLA:
-Alli: Teemu Honkanen, Riku Muurinen, Samu Lax
-Gomez: ilkka soini, Samu Lax, Jaakko Ahtila
-Noble: ilkka soini, Mikael Kourilehto, Mikael Karlsson
+Alli: Teemu Honkanen, Samu Lax, Riku Muurinen
+Kelly: Martti Siiteri, Riku Muurinen, Jonne Sandström
+Lucas Moura: Kim Hipari, Timo Tikkala, Aleksi Leppanen
+Mané: Jaakko Ahtila, Timo Tikkala, Ville Vääränen
+Mount: marko kettunen, tatu pekkala, Riku Muurinen
+Schmeichel: marko kettunen, Jonne Sandström, Ville Vääränen
+Wan-Bissaka: marko kettunen, Samu Lax, Timo Tikkala
 ----------------------------------------------
 SUOSITUIMMAT:
-Lundstram: 17/19
-Salah: 15/19
-De Bruyne: 13/19
+Salah: 18/19
+Ings: 15/19
 Alexander-Arnold: 11/19
-Vardy: 11/19
-Ings: 10/19
-Martial: 10/19
 Traoré: 9/19
-van Dijk: 9/19
-Firmino: 8/19
+Jiménez: 8/19
+Martial: 8/19
+van Dijk: 8/19
+Ryan: 7/19
+Söyüncü: 7/19
+Firmino: 6/19
 
-Yhteensä 50 eri pelaajaa valittu.
+Yhteensä 59 eri pelaajaa valittu.
