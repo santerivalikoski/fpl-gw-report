@@ -6,12 +6,13 @@ let leagueUrl = 'https://fantasy.premierleague.com/leagues/115502/standings/c'
 let managers = [{}]
 let pituus = 0
 let laskuri = 0
-let promise = new Promise(function (resolve, reject) {
-    (async () => {
+let promise = new Promise(function(resolve, reject) {
+    (async() => {
         const browser = await puppeteer.launch({ headless: true });
         const page = await browser.newPage();
         await page.goto(leagueUrl, { waitUntil: 'networkidle2' });
-        await page.waitForSelector('div[class="Copy-zj3yf2-0 kbodRR"]', { timeout: 20000 })
+        await page.waitForSelector('div[class="Copy-zj3yf2-0 kbodRR"]', { timeout: 5000 })
+            .then(() => console.log('Page loaded.'))
         let urlData = await page.evaluate(() => {
             let urls = []
             let leagueName = document.querySelector('div[class="Copy-zj3yf2-0 kbodRR"] > h2[class="Title-sc-9c7mfn-0 ldEDNa"]').innerText
@@ -21,8 +22,7 @@ let promise = new Promise(function (resolve, reject) {
                 try {
                     urlJson.name = playerElement.querySelector('a[class="Link-a4a9pd-1 jwJFdW"]').getAttribute('href')
                     urlJson.league = leagueName
-                }
-                catch (exception) {
+                } catch (exception) {
                     console.log(exception)
                 }
                 urls.push(urlJson);
@@ -36,14 +36,14 @@ let promise = new Promise(function (resolve, reject) {
         else reject('buu')
     })();
 })
-promise.then(function (val) {
+promise.then(function(val) {
     console.log(`Collecting teams from '${val}'`)
     for (let i = 0; i < tulostus[1].length; i++) {
         urlList.add(`https://fantasy.premierleague.com${tulostus[1][i].name}`)
     }
     console.log(`Found ${pituus} teams.`)
     console.log(`Starting puppeteer crawl...`);
-    (async () => {
+    (async() => {
         for (const teamUrl of urlList) {
             laskuri++
             const browser = await puppeteer.launch({ headless: true });
@@ -73,8 +73,7 @@ promise.then(function (val) {
                             playerJson.captain = true
                         }
                         playerJson.chipused = chipUsed
-                    }
-                    catch (exception) {
+                    } catch (exception) {
                         console.log('exception: ', exception)
                     }
                     players.push(playerJson);
@@ -91,8 +90,7 @@ promise.then(function (val) {
                             yellowPlayer.captain = true
                         }
                         playerJson.chipused = chipUsed
-                    }
-                    catch (exception) {
+                    } catch (exception) {
                         console.log('exception: ', exception)
                     }
                     players.push(yellowPlayer);
@@ -109,8 +107,7 @@ promise.then(function (val) {
                             orangePlayer.captain = true
                         }
                         playerJson.chipused = chipUsed
-                    }
-                    catch (exception) {
+                    } catch (exception) {
                         console.log('exception: ', exception)
                     }
                     players.push(orangePlayer);
@@ -127,12 +124,11 @@ promise.then(function (val) {
                             redPlayer.captain = true
                         }
                         playerJson.chipused = chipUsed
-                    }
-                    catch (exception) {
+                    } catch (exception) {
                         console.log('exception: ', exception)
                     }
                     players.push(redPlayer);
-                });            
+                });
 
                 return players;
             });
@@ -142,7 +138,7 @@ promise.then(function (val) {
 
             if (laskuri === pituus) {
                 console.log('Writing file...')
-                fs.writeFile("./db.json", JSON.stringify(managers), function (err) {
+                fs.writeFile("./db.json", JSON.stringify(managers), function(err) {
                     if (err) {
                         return console.log(err)
                     }
